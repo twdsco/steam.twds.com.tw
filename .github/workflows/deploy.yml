@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: 
+        - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Create deployment directory
+      run: |
+        mkdir -p deploy
+        
+    - name: Copy files to deployment directory
+      run: |
+        # Copy main application files
+        cp index.html deploy/
+        cp script.js deploy/
+        cp styles.css deploy/
+        
+        # Create data directory
+        mkdir -p deploy/data
+        
+        # Create CNAME file for custom domain
+        echo "steam.twds.com.tw" > deploy/CNAME
+        
+    - name: Build JSON files from source data
+      run: |
+        # Run the unified converter to build JSON files
+        python3 convert_steam_cache_unified.py
+        
+        # Copy the generated JSON files to deployment directory
+        cp data/*.json deploy/data/
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./deploy
+        force_orphan: true 

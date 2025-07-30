@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWDS Steam Cache 提供範圍確認</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TWDS Steam Cache<br>提供範圍確認</h1>
+            <p>請輸入 IP 位置，確認該 IP 是否在服務範圍內</p>
+        </header>
+        
+        <main>
+            <div class="search-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="ipInput" 
+                        placeholder="請輸入 IP 位置"
+                        class="ip-input"
+                    >
+                    <button id="searchBtn" class="search-btn">
+                        <span class="btn-text">搜尋</span>
+                        <span class="loading-spinner" style="display: none;"></span>
+                    </button>
+                </div>
+                <button id="getCurrentIpBtn" class="current-ip-btn">
+                    <span class="btn-text">使用我現在的 IP 位置</span>
+                    <span class="loading-spinner" style="display: none;"></span>
+                </button>
+            </div>
+            
+            <div id="results" class="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2>IP 資訊</h2>
+                </div>
+                <div id="resultsContent" class="results-content">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+            
+            <div id="error" class="error-message" style="display: none;">
+                <!-- Error messages will be displayed here -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

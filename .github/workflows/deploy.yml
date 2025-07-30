@@ -34,6 +34,9 @@ jobs:
         cp script.js deploy/
         cp styles.css deploy/
         
+        # Copy assets directory
+        cp -r assets deploy/
+        
         # Create data directory
         mkdir -p deploy/data
         

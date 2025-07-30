@@ -295,7 +295,7 @@ class IPLookupApp {
                 </div>
                 <div class="info-item">
                     <span class="info-label">AS 路徑</span>
-                    <span class="info-value">${steamCacheEntry.aspath || 'N/A'}</span>
+                    <span class="info-value">${steamCacheEntry.aspath || '自有網段'}</span>
                 </div>
                 <div class="info-item">
                     <span class="info-label">BGP 社群資訊</span>

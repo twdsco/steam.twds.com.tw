@@ -304,7 +304,7 @@ class IPLookupApp {
             `;
         } else {
             resultsHTML += `
-                <div class="info-item steam-cache-info">
+                <div class="info-item steam-cache-info steam-cache-no">
                     <span class="info-label">Steam Cache 狀態</span>
                     <span class="info-value steam-cache-no">❌ 不在服務範圍內</span>
                 </div>

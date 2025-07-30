@@ -66,10 +66,12 @@ def parse_route_block(block, ip_version):
         line = line.strip()
         
         # Extract AS path
-        aspath_match = re.search(r'AS path:\s*\[(\d+)\]\s*(.+?)\s*[I?]$', line)
+        aspath_match = re.search(r'AS path:\s*\[(\d+)\]\s*(.+?)\s*[IE?](\s*\(Atomic\))?$', line)
         if aspath_match:
             # Use the full AS path after the bracket
             entry["aspath"] = aspath_match.group(2).strip()
+            if entry["aspath"] == "18041":
+                entry["aspath"] = ""
         
         # Extract communities
         communities_match = re.search(r'Communities:\s*(.+)', line)

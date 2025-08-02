@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY57P3H3JR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LY57P3H3JR');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.svg">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TWDS Steam Cache 提供範圍確認 - 台灣 Steam 快取服務">
+    <meta property="og:description" content="檢查您的 IP 位置是否在 TWDS Steam Cache 服務範圍內。提供台灣地區 Steam 遊戲下載加速服務，提升遊戲體驗。支援 Steam 快取、遊戲下載加速、網路優化等服務。">
+    <meta property="og:image" content="https://steam.twds.com.tw/assets/og.png?v=2">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://steam.twds.com.tw">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="TWDS Steam Cache">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TWDS Steam Cache 提供範圍確認">
+    <meta name="twitter:description" content="檢查您的 IP 位置是否在 TWDS Steam Cache 服務範圍內。提供台灣地區 Steam 遊戲下載加速服務。">
+    <meta name="twitter:image" content="https://steam.twds.com.tw/assets/og.png?v=2">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="TWDS Steam Cache 提供範圍確認工具。檢查您的 IP 位置是否在台灣 Steam 快取服務範圍內，享受更快速的遊戲下載體驗。支援 Steam 遊戲下載加速、網路優化等服務。">
+    <meta name="keywords" content="Steam, 快取, 台灣, TWDS, 遊戲下載, 網路加速, IP 檢查, 服務範圍, 遊戲體驗, 下載加速">
+    <meta name="author" content="TWDS">
+    <meta name="robots" content="index, follow">
+    
+    <title>TWDS Steam Cache 提供範圍確認 - 台灣 Steam 快取服務</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TWDS Steam Cache<br>提供範圍確認</h1>
+            <p>請輸入 IP 位置，確認該 IP 是否在服務範圍內</p>
+        </header>
+        
+        <main>
+            <div class="search-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="ipInput" 
+                        placeholder="請輸入 IP 位置"
+                        class="ip-input"
+                    >
+                    <button id="searchBtn" class="search-btn">
+                        <span class="btn-text">搜尋</span>
+                        <span class="loading-spinner" style="display: none;"></span>
+                    </button>
+                </div>
+                <button id="getCurrentIpBtn" class="current-ip-btn">
+                    <span class="btn-text">使用我現在的 IP 位置</span>
+                    <span class="loading-spinner" style="display: none;"></span>
+                </button>
+            </div>
+            
+            <div id="results" class="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2>IP 資訊</h2>
+                </div>
+                <div id="resultsContent" class="results-content">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+            
+            <div id="error" class="error-message" style="display: none;">
+                <!-- Error messages will be displayed here -->
+            </div>
+            <footer class="footer">
+                <p>本 Steam 快取服務與查詢頁面由 <a href="https://www.twds.com.tw">台灣數位串流有限公司</a> 提供</p>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

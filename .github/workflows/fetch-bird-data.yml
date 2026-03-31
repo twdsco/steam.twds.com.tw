@@ -1,0 +1,69 @@
+name: Refresh BIRD Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-bird-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Configure SSH key
+        env:
+          SSH_PRIVKEY: ${{ secrets.SSH_PRIVKEY }}
+        run: |
+          if [ -z "${SSH_PRIVKEY}" ]; then
+            echo "SSH_PRIVKEY is not configured" >&2
+            exit 1
+          fi
+
+          mkdir -p "${HOME}/.ssh"
+          printf '%s\n' "${SSH_PRIVKEY}" > "${HOME}/.ssh/id_ed25519"
+          chmod 600 "${HOME}/.ssh/id_ed25519"
+          ssh-keyscan -H 103.147.22.10 >> "${HOME}/.ssh/known_hosts"
+
+      - name: Fetch raw BIRD data
+        run: ./scripts/fetch_bird_data.sh data
+
+      - name: Prepare bird-data worktree
+        run: |
+          git fetch origin bird-data || true
+
+          if git show-ref --verify --quiet refs/remotes/origin/bird-data; then
+            git worktree add /tmp/bird-data origin/bird-data
+          else
+            git worktree add -b bird-data /tmp/bird-data
+            cd /tmp/bird-data
+            git rm -rf . >/dev/null 2>&1 || true
+            find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          fi
+
+      - name: Update raw data branch
+        run: |
+          mkdir -p /tmp/bird-data/data
+          cp data/steam-cache-v4.txt /tmp/bird-data/data/steam-cache-v4.txt
+          cp data/steam-cache-v6.txt /tmp/bird-data/data/steam-cache-v6.txt
+
+          cd /tmp/bird-data
+          git config user.name "seadog007"
+          git config user.email "007seadog@gmail.com"
+          git add data/steam-cache-v4.txt data/steam-cache-v6.txt
+
+          if git diff --cached --quiet; then
+            echo "No raw data changes detected"
+            exit 0
+          fi
+
+          git commit -m "Update BIRD raw data"
+          git push origin HEAD:bird-data

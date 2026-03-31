@@ -18,23 +18,26 @@ A web application to check if an IP address is within the TWDS Steam Cache servi
 ├── script.js               # JavaScript functionality
 ├── styles.css              # CSS styles
 ├── data/
-│   ├── steam-cache-v4.json # IPv4 Steam cache data
-│   ├── steam-cache-v6.json # IPv6 Steam cache data
 │   └── communities.json    # BGP communities translations
+├── scripts/
+│   └── fetch_bird_data.sh  # Remote BIRD2 export helper for CI
 ├── .github/workflows/
-│   └── deploy.yml          # GitHub Actions deployment workflow
+│   ├── deploy.yml          # GitHub Pages deployment workflow
+│   └── fetch-bird-data.yml # Raw BIRD data refresh workflow
 └── README.md               # This file
 ```
 
 ## Deployment
 
 This application is automatically deployed to GitHub Pages using GitHub Actions.
+The raw BIRD exports are stored separately on the `bird-data` branch and are not tracked on the main code branch.
 
 ### Deployment Process
 
-1. **Trigger**: Pushes to `main` or `master` branch
-2. **Build**: Copies required files to deployment directory
-3. **Deploy**: Publishes to GitHub Pages with custom domain
+1. **Raw data refresh**: A scheduled or manual workflow connects to `user@103.147.22.10`, runs `sudo birdc`, and commits updated `steam-cache-v4.txt` / `steam-cache-v6.txt` files to `bird-data`
+2. **Deploy trigger**: Pushes to the default code branch or successful completion of the raw data refresh workflow
+3. **Build**: The deploy workflow checks out the default code branch, restores raw text dumps from `bird-data`, converts them to JSON, and copies required files to the deployment directory
+4. **Deploy**: Publishes to GitHub Pages with custom domain
 
 ### Deployed Files
 
@@ -43,6 +46,12 @@ This application is automatically deployed to GitHub Pages using GitHub Actions.
 - `styles.css` - Styling
 - `data/*.json` - Steam cache data and translations
 - `CNAME` - Custom domain configuration
+
+### Required GitHub Secret
+
+- `SSH_PRIVKEY` - Private key used by GitHub Actions to SSH to `user@103.147.22.10`
+
+The remote account must be able to run `sudo birdc` non-interactively.
 
 ### Custom Domain
 
@@ -54,7 +63,8 @@ To run the application locally:
 
 1. Clone the repository
 2. Open `index.html` in a web browser
-3. The application will load Steam cache data from the `data/` directory
+3. If you want to build JSON locally, place `steam-cache-v4.txt` and `steam-cache-v6.txt` under `data/`
+4. The application will load Steam cache data from the generated JSON files in the `data/` directory
 
 ## Data Sources
 

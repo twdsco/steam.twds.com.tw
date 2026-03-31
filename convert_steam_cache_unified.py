@@ -9,6 +9,12 @@ import json
 import sys
 from pathlib import Path
 
+def is_bird_output(content):
+    """
+    Detect BIRD `show route ... all` output.
+    """
+    return bool(re.search(r'^\s*BIRD\s+\d', content, re.MULTILINE))
+
 def parse_steam_cache_file(file_path, ip_version):
     """
     Parse Steam cache data file and convert to JSON format
@@ -17,6 +23,9 @@ def parse_steam_cache_file(file_path, ip_version):
     
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
+
+    if is_bird_output(content):
+        return parse_bird_cache_file(content, ip_version)
     
     # Split content into individual route entries
     # Each entry starts with @ or * followed by IP prefix
@@ -34,6 +43,31 @@ def parse_steam_cache_file(file_path, ip_version):
         if entry:
             entries.append(entry)
     
+    return entries
+
+def parse_bird_cache_file(content, ip_version):
+    """
+    Parse BIRD `show route protocol ... all` output and convert to JSON format.
+    """
+    entries = []
+    route_blocks = re.split(r'\n(?=[\da-fA-F:\.]+/\d+\s+unicast\s+\[)', content)
+
+    for block in route_blocks:
+        if not block.strip():
+            continue
+
+        first_line = block.strip().split('\n', 1)[0]
+        if (
+            first_line.startswith('#')
+            or first_line.startswith('BIRD ')
+            or first_line.startswith('Table ')
+        ):
+            continue
+
+        entry = parse_bird_route_block(block, ip_version)
+        if entry:
+            entries.append(entry)
+
     return entries
 
 def parse_route_block(block, ip_version):
@@ -86,6 +120,74 @@ def parse_route_block(block, ip_version):
             ]
             entry["communities"] = filtered_communities
     
+    return entry
+
+def normalize_bird_aspath(aspath):
+    """
+    Drop the local ASN from BIRD output to match the existing JSON shape.
+    """
+    tokens = aspath.split()
+    if tokens and tokens[0] == "18041":
+        tokens = tokens[1:]
+    return " ".join(tokens)
+
+def extract_bird_communities(line):
+    """
+    Extract filtered community values from BIRD output.
+    """
+    communities = []
+    seen = set()
+
+    for asn, value in re.findall(r'\((\d+),\s*(\d+)\)', line):
+        if asn != "18041":
+            continue
+        community = f"{asn}:{value}"
+        if community not in seen:
+            communities.append(community)
+            seen.add(community)
+
+    for asn, value in re.findall(r'\(rt,\s*(\d+),\s*(\d+)\)', line):
+        if asn != "18041":
+            continue
+        community = f"target:{asn}:{value}"
+        if community not in seen:
+            communities.append(community)
+            seen.add(community)
+
+    return communities
+
+def parse_bird_route_block(block, ip_version):
+    """
+    Parse a single BIRD route block and extract relevant information.
+    """
+    lines = block.strip().split('\n')
+
+    if ip_version == 'v4':
+        prefix_match = re.search(r'^(\d+\.\d+\.\d+\.\d+/\d+)\s+unicast\b', lines[0])
+    else:
+        prefix_match = re.search(r'^([\da-fA-F:]+/\d+)\s+unicast\b', lines[0])
+
+    if not prefix_match:
+        return None
+
+    entry = {
+        "prefix": prefix_match.group(1),
+        "aspath": "",
+        "communities": []
+    }
+
+    for raw_line in lines[1:]:
+        line = raw_line.strip()
+
+        if line.startswith('BGP.as_path:'):
+            aspath = line.split(':', 1)[1].strip()
+            entry["aspath"] = normalize_bird_aspath(aspath)
+
+        elif line.startswith('BGP.community:') or line.startswith('BGP.ext_community:'):
+            for community in extract_bird_communities(line):
+                if community not in entry["communities"]:
+                    entry["communities"].append(community)
+
     return entry
 
 def save_json(data, output_path):

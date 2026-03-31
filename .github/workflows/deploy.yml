@@ -27,12 +27,30 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
+      - name: Check bird-data branch availability
+        id: bird_data_branch
+        run: |
+          if git ls-remote --exit-code --heads origin bird-data >/dev/null 2>&1; then
+            echo "exists=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "::warning::bird-data branch does not exist yet. Run the Refresh BIRD Data workflow once to create it."
+            echo "exists=false" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Require bird-data after refresh workflow
+        if: github.event_name == 'workflow_run' && steps.bird_data_branch.outputs.exists != 'true'
+        run: |
+          echo "bird-data branch is missing after Refresh BIRD Data completed." >&2
+          exit 1
+
       - name: Setup Python
+        if: steps.bird_data_branch.outputs.exists == 'true'
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
       - name: Restore raw BIRD data from bird-data branch
+        if: steps.bird_data_branch.outputs.exists == 'true'
         run: |
           git fetch origin bird-data
           git cat-file -e origin/bird-data:data/steam-cache-v4.txt
@@ -42,10 +60,12 @@ jobs:
           git show origin/bird-data:data/steam-cache-v6.txt > data/steam-cache-v6.txt
 
       - name: Create deployment directory
+        if: steps.bird_data_branch.outputs.exists == 'true'
         run: |
           mkdir -p deploy
 
       - name: Copy files to deployment directory
+        if: steps.bird_data_branch.outputs.exists == 'true'
         run: |
           cp index.html deploy/
           cp script.js deploy/
@@ -55,11 +75,13 @@ jobs:
           echo "steam.twds.com.tw" > deploy/CNAME
 
       - name: Build JSON files from source data
+        if: steps.bird_data_branch.outputs.exists == 'true'
         run: |
           python3 convert_steam_cache_unified.py
           cp data/*.json deploy/data/
 
       - name: Deploy to GitHub Pages
+        if: steps.bird_data_branch.outputs.exists == 'true'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

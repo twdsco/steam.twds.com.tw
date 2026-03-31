@@ -6,7 +6,8 @@ class IPLookupApp {
             getCurrentIpBtn: document.getElementById('getCurrentIpBtn'),
             results: document.getElementById('results'),
             resultsContent: document.getElementById('resultsContent'),
-            error: document.getElementById('error')
+            error: document.getElementById('error'),
+            updateTime: document.getElementById('updateTime')
         };
         
         this.steamCacheData = {
@@ -14,6 +15,7 @@ class IPLookupApp {
             v6: []
         };
         this.communitiesTranslation = {};
+        this.generatedAt = null;
         
         this.init();
     }
@@ -117,11 +119,43 @@ class IPLookupApp {
                 });
                 console.log(`Loaded ${Object.keys(this.communitiesTranslation).length} community translations`);
             }
+
+            const metadataResponse = await fetch('data/steam-cache-meta.json');
+            if (metadataResponse.ok) {
+                const metadata = await metadataResponse.json();
+                this.generatedAt = metadata.generated_at || null;
+                this.renderUpdateTime();
+            }
             
             console.log('Steam cache data loaded successfully');
         } catch (error) {
             console.error('Error loading Steam cache data:', error);
         }
+    }
+
+    renderUpdateTime() {
+        if (!this.elements.updateTime || !this.generatedAt) {
+            return;
+        }
+
+        const timestamp = new Date(this.generatedAt);
+        if (Number.isNaN(timestamp.getTime())) {
+            return;
+        }
+
+        const formatter = new Intl.DateTimeFormat('zh-TW', {
+            timeZone: 'Asia/Taipei',
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false
+        });
+
+        this.elements.updateTime.textContent = `資料更新時間：${formatter.format(timestamp)}`;
+        this.elements.updateTime.style.display = 'block';
     }
     
     isIPInSteamCache(ip) {

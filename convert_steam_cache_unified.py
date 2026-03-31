@@ -6,7 +6,7 @@ Converts both IPv4 and IPv6 Steam cache data from text format to JSON format
 
 import re
 import json
-import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 def is_bird_output(content):
@@ -199,6 +199,15 @@ def save_json(data, output_path):
     
     print(f"Converted {len(data)} entries to {output_path}")
 
+def save_metadata(metadata, output_path):
+    """
+    Save conversion metadata to JSON file
+    """
+    with open(output_path, 'w', encoding='utf-8') as file:
+        json.dump(metadata, file, indent=2, ensure_ascii=False)
+
+    print(f"Saved metadata to {output_path}")
+
 def convert_file(input_file, output_file, ip_version):
     """
     Convert a single file
@@ -219,14 +228,14 @@ def convert_file(input_file, output_file, ip_version):
             print(f"\nFirst 3 entries from {ip_version}:")
             for i, entry in enumerate(entries[:3]):
                 print(f"{i+1}. {json.dumps(entry, ensure_ascii=False)}")
-            return True
+            return entries
         else:
             print("No valid entries found in the file")
-            return False
+            return []
             
     except Exception as e:
         print(f"Error: {e}")
-        return False
+        return None
 
 def main():
     """
@@ -238,14 +247,29 @@ def main():
     ]
     
     success_count = 0
+    counts = {}
     
     for input_file, output_file, ip_version in files_to_convert:
         print(f"\n{'='*50}")
         print(f"Processing {ip_version.upper()} data...")
         print(f"{'='*50}")
-        
-        if convert_file(input_file, output_file, ip_version):
+
+        entries = convert_file(input_file, output_file, ip_version)
+        if entries is None:
+            continue
+
+        counts[ip_version] = len(entries)
+        if entries:
             success_count += 1
+    
+    if success_count:
+        save_metadata(
+            {
+                "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "counts": counts,
+            },
+            "data/steam-cache-meta.json",
+        )
     
     print(f"\n{'='*50}")
     print(f"Conversion Summary:")

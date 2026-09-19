@@ -32,11 +32,11 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-44.32.191.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS153376i]
+44.32.191.0/24       unicast [twds_steam_v4 18:19:22.538] * (100) [AS153376i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 153376
+	BGP.as_path: 18041 137409 140227 140227 44324 153376
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -722,6 +722,16 @@ Table master4:
 	BGP.community: (7578,99) (7578,199) (18041,1000) (18041,2003) (18041,10000) (65000,7474) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 199) (rt, 18041, 10000) (ro, 7578, 100)
 	BGP.large_community: (7578, 0, 7474) (7578, 100, 11) (24224, 0, 56030) (58941, 65000, 56030) (63830, 0, 9790) (63830, 0, 56030) (137409, 0, 110) (137409, 0, 210) (137409, 0, 310) (137409, 0, 410) (137409, 0, 510)
+103.185.231.0/24     unicast [twds_steam_v4 18:51:47.921] * (100) [AS149771i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 8529 17557 131284 131284 131284 131284 131284 131284 131284 131284 131284 131284 131284 149771
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,20) (8529,700) (8529,807) (8529,977) (8529,17557) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 3299) (rt, 18041, 10000) (ro, 7578, 3200) (generic, 0x30b0000, 0x2151) (generic, 0x30b0000, 0x2328)
+	BGP.large_community: (0, 3, 0) (105, 3356, 1) (137409, 0, 1) (137409, 0, 2)
 162.68.208.0/24      unicast [twds_steam_v4 2026-09-11] * (100) [AS26585i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -1717,7 +1727,7 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (7578, 1700, 2)
-156.171.192.0/18     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.171.192.0/18     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -2276,7 +2286,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.90 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-41.153.64.0/20       unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+41.153.64.0/20       unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -4220,6 +4230,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+184.105.7.0/24       unicast [twds_steam_v4 19:38:19.726] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 161.131.104.0/24     unicast [twds_steam_v4 2026-07-30] * (100) [AS8075i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -5598,7 +5618,7 @@ Table master4:
 	BGP.aggregator: 10.8.192.0 AS4206005000
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-94.185.204.0/23      unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+94.185.204.0/23      unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -5786,7 +5806,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-146.255.24.0/21      unicast [twds_steam_v4 2026-09-11] * (100) [AS50833i]
+146.255.24.0/21      unicast [twds_steam_v4 18:16:18.718] * (100) [AS50833i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -6688,7 +6708,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.129.0/24     unicast [twds_steam_v4 17:29:04.501] * (100) [AS17895i]
+114.198.129.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -7214,7 +7234,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-103.192.184.0/22     unicast [twds_steam_v4 2026-09-16] * (100) [AS64008i]
+103.192.184.0/22     unicast [twds_steam_v4 18:39:10.930] * (100) [AS64008i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -7555,7 +7575,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,299) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 299) (rt, 18041, 10000) (ro, 7578, 200) (generic, 0x30b0000, 0x3e8) (generic, 0x30b0000, 0x4445)
 	BGP.large_community: (7578, 200, 2)
-38.10.88.0/24        unicast [twds_steam_v4 2026-09-08] * (100) [AS136244i]
+38.10.88.0/24        unicast [twds_steam_v4 18:56:42.322] * (100) [AS136244i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -8330,6 +8350,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14204) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+103.82.249.0/24      unicast [twds_steam_v4 18:46:55.657] * (100) [AS63989i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 63989
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 139.71.185.0/24      unicast [twds_steam_v4 2026-09-11] * (100) [AS6307i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -8728,6 +8758,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,604) (15412,614) (15412,622) (15412,705) (15412,1431) (18041,1000) (18041,2003) (18041,10000) (18101,102) (18101,1344) (18101,50205) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+172.64.207.0/24      unicast [twds_steam_v4 18:10:58.667] * (100) [AS13335i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 13335
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (13335,10017) (13335,11012) (13335,19000) (13335,19010) (13335,20520) (13335,40000) (13335,40100) (18041,1000) (18041,2003) (18041,10000)
+	BGP.ext_community: (rt, 18041, 10000)
 202.134.22.0/24      unicast [twds_steam_v4 2026-07-18] * (100) [AS45903i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -9160,15 +9199,6 @@ Table master4:
 	BGP.community: (7578,99) (7578,2499) (18041,1000) (18041,2003) (18041,10000) (62000,1002) (64996,20001) (64996,61026) (64996,64512) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 2499) (rt, 18041, 10000) (ro, 7578, 2400)
 	BGP.large_community: (7578, 2400, 1)
-103.50.217.0/24      unicast [twds_steam_v4 2026-09-02] * (100) [AS132164i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 132164 132164 132164 132164 132164
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 207.57.138.0/24      unicast [twds_steam_v4 2026-08-22] * (100) [AS1054i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -12365,16 +12395,6 @@ Table master4:
 	BGP.aggregator: 0.160.0.93 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-44.32.192.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS214575i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 214575
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 8) (44324, 10000, 52) (44324, 10001, 344) (44324, 10002, 214575) (44324, 10204, 214575)
 47.89.99.0/24        unicast [twds_steam_v4 2026-07-28] * (100) [AS45102i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -12422,6 +12442,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (701,3) (15169,11012) (15412,5) (15412,9) (15412,604) (15412,615) (15412,621) (15412,705) (15412,1432) (15412,4131) (18041,1000) (18041,2003) (18041,10000) (18101,103) (18101,125) (18101,1344) (18101,50207) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+103.149.49.0/24      unicast [twds_steam_v4 20:11:47.331] * (100) [AS140715i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 63927 140715
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 34.173.128.0/17      unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -16486,16 +16516,6 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (4635, 0, 6939) (7578, 1700, 8) (24115, 0, 6939)
-160.187.215.0/24     unicast [twds_steam_v4 2026-09-07] * (100) [AS153351i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 153351
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
 202.56.85.0/24       unicast [twds_steam_v4 2026-09-12] * (100) [AS45960i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -19015,15 +19035,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-103.230.190.0/23     unicast [twds_steam_v4 2026-08-07] * (100) [AS133349i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 131772 133349
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 103.227.155.0/24     unicast [twds_steam_v4 2026-07-23] * (100) [AS55547i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -19121,7 +19132,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-114.198.130.0/24     unicast [twds_steam_v4 17:29:04.929] * (100) [AS17895i]
+114.198.130.0/24     unicast [twds_steam_v4 18:27:44.123] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -19829,7 +19840,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,299) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 299) (rt, 18041, 10000) (ro, 7578, 200) (generic, 0x30b0000, 0x3e8) (generic, 0x30b0000, 0x4445)
 	BGP.large_community: (7578, 200, 2)
-38.10.89.0/24        unicast [twds_steam_v4 2026-09-08] * (100) [AS136244i]
+38.10.89.0/24        unicast [twds_steam_v4 18:56:42.322] * (100) [AS136244i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -20966,6 +20977,15 @@ Table master4:
 	BGP.aggregator: 10.35.231.210 AS135401
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
+172.64.208.0/24      unicast [twds_steam_v4 18:10:58.667] * (100) [AS13335i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 13335
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (13335,10017) (13335,11012) (13335,19000) (13335,19010) (13335,20520) (13335,40000) (13335,40100) (18041,1000) (18041,2003) (18041,10000)
+	BGP.ext_community: (rt, 18041, 10000)
 202.134.23.0/24      unicast [twds_steam_v4 2026-07-18] * (100) [AS45903i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -25617,6 +25637,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+64.71.175.0/24       unicast [twds_steam_v4 19:45:40.271] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 168.78.96.0/24       unicast [twds_steam_v4 2026-06-18] * (100) [AS18300i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -26839,7 +26869,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-114.198.128.0/19     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.128.0/19     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -28179,7 +28209,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-74.52.19.0/24        unicast [twds_steam_v4 2026-09-14] * (100) [AS154335i]
+74.52.19.0/24        unicast [twds_steam_v4 19:01:05.827] * (100) [AS154335i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -29217,7 +29247,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-50.22.192.0/21       unicast [twds_steam_v4 00:07:36.376] * (100) [AS36351i]
+50.22.192.0/21       unicast [twds_steam_v4 2026-09-19] * (100) [AS36351i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -31335,7 +31365,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,2499) (18041,1000) (18041,2003) (18041,10000) (62000,1002) (64996,20001) (64996,61026) (64996,64512) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 2499) (rt, 18041, 10000) (ro, 7578, 2400)
 	BGP.large_community: (7578, 2400, 1)
-114.198.131.0/24     unicast [twds_steam_v4 17:29:04.501] * (100) [AS17895i]
+114.198.131.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -32582,7 +32612,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-105.206.0.0/18       unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+105.206.0.0/18       unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -33552,7 +33582,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14204) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-181.41.216.0/24      unicast [twds_steam_v4 17:02:20.468] * (100) [AS57511i]
+181.41.216.0/24      unicast [twds_steam_v4 18:57:16.794] * (100) [AS57511i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -36842,7 +36872,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-151.244.99.0/24      unicast [twds_steam_v4 22:44:06.007] * (100) [AS397423i]
+151.244.99.0/24      unicast [twds_steam_v4 2026-09-18] * (100) [AS397423i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -38008,7 +38038,7 @@ Table master4:
 	BGP.aggregator: 10.52.130.129 AS4200302022
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-45.43.18.0/24        unicast [twds_steam_v4 22:44:11.110] * (100) [AS397423i]
+45.43.18.0/24        unicast [twds_steam_v4 2026-09-18] * (100) [AS397423i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -43649,7 +43679,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-114.198.132.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.132.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -43910,11 +43940,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-44.32.161.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS203888i]
+44.32.161.0/24       unicast [twds_steam_v4 18:19:28.215] * (100) [AS203888i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 203888
+	BGP.as_path: 18041 137409 140227 140227 44324 203888
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -45653,7 +45683,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 65168, 132708) (rt, 65168, 142435) (unknown 0x4, 18041, 1133903872) (rt, 142435, 400) (rt, 142435, 16802) (generic, 0x97c70100, 0x4679)
-23.200.128.0/22      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.200.128.0/22      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -45797,7 +45827,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,2) (15412,5) (15412,7) (15412,9) (15412,604) (15412,615) (15412,621) (15412,705) (15412,1432) (18041,1000) (18041,2003) (18041,10000) (18101,104) (18101,1344) (18101,50210) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-163.223.96.0/24      unicast [twds_steam_v4 2026-09-15] * (100) [AS153692i]
+163.223.96.0/24      unicast [twds_steam_v4 19:08:43.066] * (100) [AS153692i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -46661,15 +46691,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14203) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-118.82.6.0/24        unicast [twds_steam_v4 2026-07-07] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 123.58.216.0/24      unicast [twds_steam_v4 2026-09-03] * (100) [AS135377?]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -47870,6 +47891,15 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+197.166.76.0/22      unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 61.97.96.0/20        unicast [twds_steam_v4 2026-06-18] * (100) [AS9848i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -51150,7 +51180,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-202.124.135.0/24     unicast [twds_steam_v4 17:28:46.570] * (100) [AS17895i]
+202.124.135.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -53701,7 +53731,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.158.0/24     unicast [twds_steam_v4 17:29:05.130] * (100) [AS17895i]
+114.198.158.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -57635,7 +57665,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,602) (15412,622) (15412,703) (15412,1501) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-148.203.151.0/24     unicast [twds_steam_v4 22:21:13.160] * (100) [AS3810i]
+148.203.151.0/24     unicast [twds_steam_v4 2026-09-18] * (100) [AS3810i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -57851,14 +57881,14 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (9304,3004) (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4130) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-84.205.67.0/24       unicast [twds_steam_v4 16:00:05.614] * (100) [AS12654i]
+84.205.67.0/24       unicast [twds_steam_v4 20:00:14.129] * (100) [AS12654i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 137409 62000 34019 12654
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.aggregator: 10.24.156.0 AS64557
+	BGP.aggregator: 10.24.212.64 AS64558
 	BGP.community: (7578,99) (7578,2499) (18041,1000) (18041,2003) (18041,10000) (34019,12654) (34019,64512) (62000,1002) (65500,10000) (65512,20001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 2499) (rt, 18041, 10000) (ro, 7578, 2400)
 	BGP.large_community: (7578, 2400, 1)
@@ -61150,11 +61180,11 @@ Table master4:
 	BGP.aggregator: 0.160.0.93 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-44.32.154.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS44324i]
+44.32.154.0/24       unicast [twds_steam_v4 18:19:28.215] * (100) [AS44324i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324
+	BGP.as_path: 18041 137409 140227 140227 44324
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -65642,15 +65672,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-52.223.71.0/24       unicast [twds_steam_v4 17:36:48.362] * (100) [AS16509i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 16509
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
 172.68.52.0/24       unicast [twds_steam_v4 2026-09-02] * (100) [AS13335i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -65985,7 +66006,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.159.0/24     unicast [twds_steam_v4 17:29:04.501] * (100) [AS17895i]
+114.198.159.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -68099,7 +68120,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.111 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-202.124.128.0/24     unicast [twds_steam_v4 17:28:46.127] * (100) [AS17895i]
+202.124.128.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -68853,7 +68874,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-138.252.13.0/24      unicast [twds_steam_v4 17:49:24.966] * (100) [AS131638i]
+138.252.13.0/24      unicast [twds_steam_v4 20:10:06.673] * (100) [AS131638i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -73135,7 +73156,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (4775,103) (4775,106) (4775,107) (4775,115) (4775,126) (4775,142) (4775,148) (4775,149) (4775,151) (4775,154) (4775,160) (4775,162) (4775,163) (4775,164) (4775,166) (4775,500) (4775,503) (15412,603) (15412,622) (15412,703) (15412,1301) (15412,15101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.177.240.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.177.240.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -74582,7 +74603,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-44.30.130.0/24       unicast [twds_steam_v4 23:55:01.899] * (100) [AS11421i]
+44.30.130.0/24       unicast [twds_steam_v4 2026-09-18] * (100) [AS11421i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -75300,7 +75321,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.178.152.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.178.152.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -76618,6 +76639,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
+65.19.178.0/24       unicast [twds_steam_v4 19:45:34.866] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 203.209.75.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS7693i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -77634,7 +77665,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-38.10.90.0/23        unicast [twds_steam_v4 2026-09-08] * (100) [AS136244i]
+38.10.90.0/23        unicast [twds_steam_v4 18:56:42.322] * (100) [AS136244i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -78521,7 +78552,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,1199) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1199) (rt, 18041, 10000) (ro, 7578, 1100)
 	BGP.large_community: (7578, 1100, 8) (207841, 0, 1004) (207841, 10, 1) (207841, 30, 6)
-193.150.128.0/20     unicast [twds_steam_v4 2026-09-11] * (100) [AS50833i]
+193.150.128.0/20     unicast [twds_steam_v4 18:16:18.718] * (100) [AS50833i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -79411,16 +79442,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-104.194.64.0/21      unicast [twds_steam_v4 12:49:10.160] * (100) [AS25820i]
+104.194.64.0/21      unicast [twds_steam_v4 20:03:58.408] * (100) [AS25820i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 906 25820 25820 25820 25820 25820 25820 25820
+	BGP.as_path: 18041 137409 25820 25820
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,58453) (906,100) (906,3000) (906,40000) (906,40100) (906,40101) (7578,99) (7578,999) (17152,1) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
-	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
+	BGP.community: (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (25820,8198) (25820,8199) (25820,46601) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900)
+	BGP.large_community: (7578, 900, 3)
 45.150.180.0/24      unicast [twds_steam_v4 2026-09-09] * (100) [AS137409i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -80910,7 +80941,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-202.124.129.0/24     unicast [twds_steam_v4 17:28:45.577] * (100) [AS17895i]
+202.124.129.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -82828,14 +82859,14 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-84.205.69.0/24       unicast [twds_steam_v4 16:00:05.614] * (100) [AS12654i]
+84.205.69.0/24       unicast [twds_steam_v4 20:00:14.129] * (100) [AS12654i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 137409 62000 2027 12654
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.aggregator: 10.24.156.0 AS64973
+	BGP.aggregator: 10.24.212.64 AS64974
 	BGP.community: (2027,12654) (2027,64512) (7578,99) (7578,2499) (18041,1000) (18041,2003) (18041,10000) (62000,1002) (62000,5630) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 2499) (rt, 18041, 10000) (ro, 7578, 2400) (generic, 0x30c0000, 0x8) (generic, 0x6032899, 0x3acfe930)
 	BGP.large_community: (7578, 2400, 1)
@@ -84445,7 +84476,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1341) (15412,4530) (15412,4610) (15412,4620) (15412,4660) (15412,4690) (15412,17103) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.177.136.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.177.136.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -86913,11 +86944,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-44.30.131.0/24       unicast [twds_steam_v4 17:49:42.773] * (100) [AS203309i]
+44.30.131.0/24       unicast [twds_steam_v4 20:13:22.716] * (100) [AS203309i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 215172 203309
+	BGP.as_path: 18041 137409 140227 140227 44324 215172 203309
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -87700,7 +87731,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-156.172.40.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.172.40.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -89732,7 +89763,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-94.185.172.0/23      unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+94.185.172.0/23      unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -91755,7 +91786,7 @@ Table master4:
 	BGP.atomic_aggr: 
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-38.10.88.0/23        unicast [twds_steam_v4 2026-09-08] * (100) [AS136244i]
+38.10.88.0/23        unicast [twds_steam_v4 18:56:42.322] * (100) [AS136244i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -92827,7 +92858,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,699) (14593,20000) (14593,20002) (14593,40505) (18041,1000) (18041,2003) (18041,10000) (65500,646) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 699) (rt, 18041, 10000) (ro, 7578, 600) (generic, 0x30b0000, 0x2969)
 	BGP.large_community: (7578, 600, 7) (137409, 0, 404) (137409, 0, 504)
-156.178.16.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.178.16.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -93175,7 +93206,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-202.124.130.0/24     unicast [twds_steam_v4 17:28:46.127] * (100) [AS17895i]
+45.240.136.0/22      unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+202.124.130.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -93299,16 +93339,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-179.61.185.0/24      unicast [twds_steam_v4 04:42:47.250] * (100) [AS199829i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 199829
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (7578,91) (7578,99) (7578,1599) (18041,1000) (18041,2003) (18041,10000) (64829,999) (65500,10000) (65500,10100)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1599) (rt, 18041, 10000) (ro, 7578, 1500) (ro, 65001, 199829)
-	BGP.large_community: (7578, 1500, 4)
 220.225.242.0/24     unicast [twds_steam_v4 2026-08-06] * (100) [AS18101i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -93958,6 +93988,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+45.247.56.0/22       unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 58.136.119.0/24      unicast [twds_steam_v4 2026-09-16] * (100) [AS133481i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -95120,15 +95159,6 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-166.81.54.0/24       unicast [twds_steam_v4 04:22:18.970] * (100) [AS38166i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 4637 19551 38166
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 187.15.117.0/24      unicast [twds_steam_v4 2026-09-09] * (100) [AS137409i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -95331,14 +95361,14 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14204) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-84.205.70.0/24       unicast [twds_steam_v4 16:00:02.439] * (100) [AS12654i]
+84.205.70.0/24       unicast [twds_steam_v4 20:00:01.651] * (100) [AS12654i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 59105 12654
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.aggregator: 10.24.156.0 AS64520
+	BGP.aggregator: 10.24.212.64 AS64521
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 182.173.77.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS45910i]
@@ -97168,16 +97198,16 @@ Table master4:
 	BGP.aggregator: 0.160.0.111 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-153.76.113.0/24      unicast [twds_steam_v4 2026-09-18] * (100) [AS213482i]
+153.76.113.0/24      unicast [twds_steam_v4 18:43:17.991] * (100) [AS213482i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 62553 213482
+	BGP.as_path: 18041 137409 394177 213482
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (7578,99) (7578,1099) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1099) (rt, 18041, 10000) (ro, 7578, 1000)
-	BGP.large_community: (7578, 1000, 5) (62553, 3, 103)
+	BGP.community: (7578,99) (7578,1599) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1555) (rt, 7578, 1599) (rt, 18041, 10000) (ro, 7578, 1500)
+	BGP.large_community: (7578, 1500, 5) (394177, 101, 5) (394177, 102, 5)
 188.241.187.0/24     unicast [twds_steam_v4 2026-09-11] * (100) [AS146943i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -97511,7 +97541,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-157.15.140.0/23      unicast [twds_steam_v4 2026-09-07] * (100) [AS152458i]
+157.15.140.0/23      unicast [twds_steam_v4 19:06:59.140] * (100) [AS152458i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -97692,6 +97722,15 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+197.166.80.0/22      unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 34.84.192.0/20       unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -98152,7 +98191,7 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (7578, 1700, 8)
-156.175.112.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.175.112.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -98483,7 +98522,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.128.0/24     unicast [twds_steam_v4 17:29:05.130] * (100) [AS17895i]
+114.198.128.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -100983,15 +101022,6 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.50.216.0/24      unicast [twds_steam_v4 2026-09-02] * (100) [AS132164i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 132164 132164 132164 132164 132164
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 207.57.137.0/24      unicast [twds_steam_v4 2026-08-22] * (100) [AS1054i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -104507,6 +104537,17 @@ Table master4:
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
+	BGP.ext_community: (rt, 18041, 10000)
+94.194.72.0/21       unicast [twds_steam_v4 18:02:00.704] * (100) [AS13335i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 13335
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.atomic_aggr: 
+	BGP.aggregator: 0.160.0.111 AS13335
+	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 104.23.193.0/24      unicast [twds_steam_v4 2026-09-04] * (100) [AS14789i]
 	via 103.147.22.254 on eth0
@@ -109281,7 +109322,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.177.160.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.177.160.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -113765,11 +113806,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-77.83.60.0/24        unicast [twds_steam_v4 15:34:43.058] * (100) [AS201684i]
+77.83.60.0/24        unicast [twds_steam_v4 18:37:39.446] * (100) [AS201684i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 8529 28885 201684 201684
+	BGP.as_path: 18041 137409 8529 28885 201684
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,30) (8529,700) (8529,707) (8529,1020) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
@@ -113881,7 +113922,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-102.56.192.0/18      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+102.56.192.0/18      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -115305,7 +115346,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-23.60.180.0/22       unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.60.180.0/22       unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -115915,7 +115956,7 @@ Table master4:
 	BGP.community: (3491,51012) (18041,1000) (18041,2003) (18041,10000) (18178,9001) (18178,9003) (18178,9004) (18178,9005) (18178,9006) (18178,9007) (18178,9008) (18178,9009) (18178,9010) (18178,9011) (18178,9012) (18178,9014) (18178,9019) (18178,9313) (38042,9001) (38042,9002) (38042,9003) (38042,9004) (38042,9005) (38042,9006) (38042,9008) (38042,9009) (38042,9011) (38042,9012) (38042,9013) (38042,9014) (38042,9015) (38042,9016) (38042,9017) (38042,9018) (38042,9019) (38042,9020)
 		(38042,9021) (38042,9022) (38042,9023) (38042,9024) (38042,9025) (38042,9026) (38042,9027) (38042,9028) (38042,9029) (38042,9030) (38042,9031) (38042,9032) (38042,9033) (58453,59900)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 18178, 101) (rt, 18178, 102)
-202.124.157.0/24     unicast [twds_steam_v4 17:28:46.331] * (100) [AS17895i]
+202.124.157.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -117068,7 +117109,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,1399) (18041,1000) (18041,2003) (18041,10000) (49127,999) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1399) (rt, 18041, 10000) (ro, 7578, 1300) (generic, 0x30b0000, 0x3e8) (generic, 0x30b0000, 0xbfe7)
 	BGP.large_community: (7578, 1300, 6)
-103.138.37.0/24      unicast [twds_steam_v4 2026-08-27] * (100) [AS136181i]
+103.138.37.0/24      unicast [twds_steam_v4 19:57:13.095] * (100) [AS136181i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -120402,6 +120443,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (200,200) (15412,602) (15412,621) (15412,703) (15412,1551) (15412,25202) (18041,1000) (18041,2003) (18041,10000) (24835,2620) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+58.147.150.0/24      unicast [twds_steam_v4 18:51:47.921] * (100) [AS17411i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 8529 17557 131284 131284 17411
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,20) (8529,700) (8529,807) (8529,977) (8529,17557) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 3299) (rt, 18041, 10000) (ro, 7578, 3200) (generic, 0x30b0000, 0x2151) (generic, 0x30b0000, 0x2328)
+	BGP.large_community: (0, 3, 0) (105, 3356, 1) (137409, 0, 1) (137409, 0, 2)
 201.159.239.0/24     unicast [twds_steam_v4 2026-09-11] * (100) [AS28552i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -120765,7 +120816,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.155.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.155.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -123618,7 +123669,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (45430,2111) (45458,2112)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.178.72.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.178.72.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -125993,11 +126044,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-77.83.61.0/24        unicast [twds_steam_v4 15:34:43.058] * (100) [AS201684i]
+77.83.61.0/24        unicast [twds_steam_v4 18:37:39.446] * (100) [AS201684i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 8529 28885 201684 201684
+	BGP.as_path: 18041 137409 8529 28885 201684
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,30) (8529,700) (8529,707) (8529,1020) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
@@ -126888,7 +126939,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.89.100.0/24      unicast [twds_steam_v4 23:15:19.822] * (100) [AS8075i]
+156.89.100.0/24      unicast [twds_steam_v4 2026-09-18] * (100) [AS8075i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -127168,7 +127219,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,199) (7578,299) (7578,399) (7578,499) (7578,599) (18041,1000) (18041,2003) (18041,10000) (65000,1221) (65000,7545) (65500,199) (65500,299) (65500,399) (65500,499) (65500,599) (65500,10000) (65500,10100)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 399) (rt, 18041, 10000) (ro, 7578, 300) (generic, 0x30b0000, 0x65)
 	BGP.large_community: (7578, 300, 3)
-184.27.126.0/23      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+184.27.126.0/23      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -128067,7 +128118,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-202.124.158.0/24     unicast [twds_steam_v4 17:28:46.127] * (100) [AS17895i]
+202.124.158.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -128691,7 +128742,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.90 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.167.32.0/19      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.167.32.0/19      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -128718,7 +128769,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-197.192.128.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+197.192.128.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -129128,15 +129179,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,604) (15412,622) (15412,703) (15412,1414) (15802,11011) (15802,11012) (15802,11109) (15802,11110) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-103.246.184.0/24     unicast [twds_steam_v4 2026-08-07] * (100) [AS58383i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 58383 58383
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 141.195.98.0/24      unicast [twds_steam_v4 2026-09-11] * (100) [AS36829i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -132993,7 +133035,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-114.198.156.0/24     unicast [twds_steam_v4 17:29:04.501] * (100) [AS17895i]
+114.198.156.0/24     unicast [twds_steam_v4 18:27:45.866] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -133224,7 +133266,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-186.251.24.0/23      unicast [twds_steam_v4 23:45:45.071] * (100) [AS262990i]
+186.251.24.0/23      unicast [twds_steam_v4 2026-09-18] * (100) [AS262990i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -136105,16 +136147,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-178.157.48.0/22      unicast [twds_steam_v4 12:49:10.160] * (100) [AS25820i]
+178.157.48.0/22      unicast [twds_steam_v4 20:03:59.341] * (100) [AS25820i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 906 25820 25820 25820 25820 25820 25820 25820
+	BGP.as_path: 18041 137409 25820 25820
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,58453) (906,100) (906,3000) (906,40000) (906,40100) (906,40101) (7578,99) (7578,999) (17152,1) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
-	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
+	BGP.community: (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (25820,8198) (25820,8199) (25820,46601) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900)
+	BGP.large_community: (7578, 900, 3)
 146.88.68.0/22       unicast [twds_steam_v4 2026-09-12] * (100) [AS55821i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -137236,7 +137278,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-148.203.149.0/24     unicast [twds_steam_v4 22:42:12.116] * (100) [AS3810i]
+148.203.149.0/24     unicast [twds_steam_v4 2026-09-18] * (100) [AS3810i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -137389,14 +137431,14 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-84.205.65.0/24       unicast [twds_steam_v4 16:00:01.363] * (100) [AS12654i]
+84.205.65.0/24       unicast [twds_steam_v4 20:00:01.651] * (100) [AS12654i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 137409 207841 12654
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.aggregator: 10.24.156.0 AS64574
+	BGP.aggregator: 10.24.212.64 AS64575
 	BGP.community: (7578,99) (7578,1199) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1199) (rt, 18041, 10000) (ro, 7578, 1100)
 	BGP.large_community: (7578, 1100, 8) (207841, 0, 1005) (207841, 10, 1) (207841, 20, 1) (207841, 30, 6)
@@ -138766,11 +138808,11 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-77.83.62.0/24        unicast [twds_steam_v4 15:34:43.058] * (100) [AS201684i]
+77.83.62.0/24        unicast [twds_steam_v4 18:37:39.446] * (100) [AS201684i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 8529 28885 201684 201684
+	BGP.as_path: 18041 137409 8529 28885 201684
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,30) (8529,700) (8529,707) (8529,1020) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
@@ -140463,6 +140505,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (45430,2111) (45458,2112)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+41.130.136.0/22      unicast [twds_steam_v4 18:46:41.587] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 23.251.128.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -140764,7 +140815,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-203.12.18.0/24       unicast [twds_steam_v4 2026-09-07] * (100) [AS138185i]
+203.12.18.0/24       unicast [twds_steam_v4 18:42:15.053] * (100) [AS138185i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -142278,7 +142329,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-23.198.128.0/21      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.198.128.0/21      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -146027,7 +146078,7 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (137409, 137409, 137409)
-114.198.157.0/24     unicast [twds_steam_v4 17:29:04.929] * (100) [AS17895i]
+114.198.157.0/24     unicast [twds_steam_v4 18:27:55.219] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -148613,6 +148664,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+177.177.82.0/24      unicast [twds_steam_v4 18:19:28.215] * (100) [AS40929i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 140227 140227 44324 40929 40929 40929
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 8) (40929, 10000, 52) (40929, 10001, 344) (40929, 10002, 40929) (40929, 10003, 2011204) (40929, 10204, 40929) (44324, 10000, 52) (44324, 10001, 344) (44324, 10002, 40929) (44324, 10204, 40929) (137409, 0, 1) (137409, 0, 2)
 38.199.36.0/24       unicast [twds_steam_v4 2026-09-04] * (100) [AS204170i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -151224,11 +151285,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-77.83.63.0/24        unicast [twds_steam_v4 15:34:43.058] * (100) [AS201684i]
+77.83.63.0/24        unicast [twds_steam_v4 18:37:39.446] * (100) [AS201684i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 8529 28885 201684 201684
+	BGP.as_path: 18041 137409 8529 28885 201684
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,30) (8529,700) (8529,707) (8529,1020) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
@@ -151815,7 +151876,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-184.87.240.0/20      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+184.87.240.0/20      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -160403,7 +160464,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (45903,40021) (45903,40031)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-109.174.252.0/23     unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+109.174.252.0/23     unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -161587,7 +161648,7 @@ Table master4:
 	BGP.aggregator: 172.17.1.6 AS5416
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-173.223.136.0/22     unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+173.223.136.0/22     unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -164097,6 +164158,16 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (7578, 1700, 2) (137409, 0, 806)
+64.71.161.0/24       unicast [twds_steam_v4 19:45:33.901] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 168.78.82.0/24       unicast [twds_steam_v4 2026-06-18] * (100) [AS18300i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -164952,7 +165023,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (45903,40021) (45903,40031)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.178.176.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.178.176.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -166575,16 +166646,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-157.10.32.0/24       unicast [twds_steam_v4 17:23:33.369] * (100) [AS152297i]
+157.10.32.0/24       unicast [twds_steam_v4 19:20:06.425] * (100) [AS152297i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 152297 152297 152297 152297
+	BGP.as_path: 18041 15412 9304 151354 152297 152297 152297
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
+	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 77.73.199.0/24       unicast [twds_steam_v4 2026-08-17] * (100) [AS42028i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -168648,7 +168718,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 65168, 142435) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-95.170.26.0/24       unicast [twds_steam_v4 01:14:27.956] * (100) [AS211333i]
+95.170.26.0/24       unicast [twds_steam_v4 20:15:05.908] * (100) [AS211333i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -169049,7 +169119,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-102.61.192.0/18      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+102.61.192.0/18      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -171069,7 +171139,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-94.185.232.0/23      unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+94.185.232.0/23      unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -173484,7 +173554,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.179.56.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.179.56.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -179068,16 +179138,15 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-157.10.33.0/24       unicast [twds_steam_v4 17:23:33.369] * (100) [AS152297i]
+157.10.33.0/24       unicast [twds_steam_v4 19:20:06.425] * (100) [AS152297i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 152297 152297 152297 152297
+	BGP.as_path: 18041 15412 9304 151354 152297 152297 152297
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
+	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 43.206.0.0/15        unicast [twds_steam_v4 2026-09-15] * (100) [AS16509i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -179497,15 +179566,15 @@ Table master4:
 	BGP.aggregator: 0.160.0.90 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-173.82.208.0/24      unicast [twds_steam_v4 17:39:24.828] * (100) [AS16509i]
+173.82.208.0/24      unicast [twds_steam_v4 19:44:26.090] * (100) [AS16509i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 16509
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
+	BGP.community: (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 18041, 10001)
 103.25.127.0/24      unicast [twds_steam_v4 2026-08-25] * (100) [AS142565i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -187246,15 +187315,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-122.200.48.0/24      unicast [twds_steam_v4 2026-06-24] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
 185.42.168.0/24      unicast [twds_steam_v4 2026-09-11] * (100) [AS62248i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -188236,15 +188296,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-173.82.108.0/24      unicast [twds_steam_v4 17:51:26.534] * (100) [AS16509i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 16509
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 163.44.120.0/24      unicast [twds_steam_v4 2026-09-11] * (100) [AS58791i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -190499,11 +190550,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-23.149.120.0/24      unicast [twds_steam_v4 17:26:13.113] * (100) [AS44324i]
+23.149.120.0/24      unicast [twds_steam_v4 18:19:28.215] * (100) [AS44324i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324
+	BGP.as_path: 18041 137409 140227 140227 44324
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -191957,6 +192008,15 @@ Table master4:
 	BGP.atomic_aggr: 
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
+	BGP.ext_community: (rt, 18041, 10000)
+173.82.209.0/24      unicast [twds_steam_v4 19:59:27.302] * (100) [AS16509i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 16509
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 103.141.142.0/23     unicast [twds_steam_v4 2026-08-23] * (100) [AS135981i]
 	via 103.147.22.254 on eth0
@@ -193725,16 +193785,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (0,16509) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-187.40.86.0/24       unicast [twds_steam_v4 09:26:42.425] * (100) [AS214155i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 214155
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (7578,99) (7578,199) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 199) (rt, 18041, 10000) (ro, 7578, 100)
-	BGP.large_community: (7578, 100, 5)
 17.248.225.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS714i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -194707,7 +194757,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-105.80.128.0/18      unicast [twds_steam_v4 09:00:01.550] * (100) [AS36992i]
+105.80.128.0/18      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -196055,16 +196105,16 @@ Table master4:
 	BGP.community: (7578,99) (18041,1000) (18041,2003) (18041,10000) (65500,299) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 299) (rt, 18041, 10000) (ro, 7578, 200)
 	BGP.large_community: (7578, 200, 521)
-144.34.224.0/20      unicast [twds_steam_v4 12:49:10.160] * (100) [AS25820i]
+144.34.224.0/20      unicast [twds_steam_v4 20:03:59.341] * (100) [AS25820i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 906 25820 25820 25820 25820 25820 25820 25820
+	BGP.as_path: 18041 137409 25820 25820
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,58453) (906,100) (906,3000) (906,40000) (906,40100) (906,40101) (7578,99) (7578,999) (17152,1) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
-	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
+	BGP.community: (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (25820,8198) (25820,8199) (25820,46601) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900)
+	BGP.large_community: (7578, 900, 3)
 157.66.134.0/23      unicast [twds_steam_v4 2026-07-22] * (100) [AS151923i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -198175,6 +198225,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14203) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+103.186.100.0/24     unicast [twds_steam_v4 18:32:53.230] * (100) [AS132206i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 15412 45903 45903 45903 45903 45903 45903 45903 45903 38733 132206
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (45903,40723) (45903,40733) (45903,59000)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 35.221.144.0/20      unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -199723,15 +199782,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (9304,3004) (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4130) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-122.200.49.0/24      unicast [twds_steam_v4 2026-06-24] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 38146 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
 204.16.254.0/24      unicast [twds_steam_v4 2026-09-08] * (100) [AS29997i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -200518,7 +200568,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,1399) (18041,1000) (18041,2003) (18041,10000) (49127,999) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1399) (rt, 18041, 10000) (ro, 7578, 1300) (generic, 0x30b0000, 0x3e8) (generic, 0x30b0000, 0xbfe7)
 	BGP.large_community: (7578, 1300, 6)
-114.198.153.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.153.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -202505,6 +202555,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,4130) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+45.240.128.0/22      unicast [twds_steam_v4 18:46:42.101] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 17.44.252.0/24       unicast [twds_steam_v4 2026-06-18] * (100) [AS714i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -204250,15 +204309,6 @@ Table master4:
 	BGP.atomic_aggr: 
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
-173.82.210.0/24      unicast [twds_steam_v4 17:35:57.174] * (100) [AS16509i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 16509
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 124.6.44.0/22        unicast [twds_steam_v4 2026-07-21] * (100) [AS24482i]
 	via 103.147.22.254 on eth0
@@ -206369,7 +206419,7 @@ Table master4:
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,20) (8529,707) (8529,1021) (8529,14006) (8529,15502) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 3299) (rt, 18041, 10000) (ro, 7578, 3200) (generic, 0x30b0000, 0x2151) (generic, 0x30b0000, 0x2328)
 	BGP.large_community: (0, 3, 0) (105, 3356, 1) (137409, 0, 1) (137409, 0, 2)
-102.59.0.0/18        unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+102.59.0.0/18        unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -206658,6 +206708,15 @@ Table master4:
 	BGP.community: (931,14000) (931,14010) (7578,99) (7578,1599) (18041,1000) (18041,2003) (18041,10000) (57695,14000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1555) (rt, 7578, 1599) (rt, 18041, 10000) (ro, 7578, 1500)
 	BGP.large_community: (7578, 1500, 5)
+197.166.72.0/22      unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 185.241.47.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS396982e]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -208574,16 +208633,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1321) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-160.250.248.0/23     unicast [twds_steam_v4 2026-09-07] * (100) [AS133464i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 133464 133464 133464 133464 133464 133464 133464 133464 133464 133464
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
 27.49.220.0/22       unicast [twds_steam_v4 2026-06-18] * (100) [AS17639i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -209150,7 +209199,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (917,52051) (917,57051) (18041,1000) (18041,2003) (18041,10000) (57695,6969) (57695,14000)
 	BGP.ext_community: (rt, 18041, 10000)
-193.108.88.0/24      unicast [twds_steam_v4 17:08:08.507] * (100) [AS21342i]
+193.108.88.0/24      unicast [twds_steam_v4 18:58:08.605] * (100) [AS21342i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -210390,17 +210439,6 @@ Table master4:
 	BGP.community: (7578,99) (7578,1399) (18041,1000) (18041,2003) (18041,10000) (49127,999) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1399) (rt, 18041, 10000) (ro, 7578, 1300) (generic, 0x30b0000, 0x3e8) (generic, 0x30b0000, 0xbfe7)
 	BGP.large_community: (7578, 1300, 6)
-31.214.128.0/24      unicast [twds_steam_v4 09:48:41.501] * (100) [AS199610i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 13335 199610
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.atomic_aggr: 
-	BGP.aggregator: 0.160.0.99 AS13335
-	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
 123.203.64.0/18      unicast [twds_steam_v4 2026-09-17] * (100) [AS9269i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -212947,11 +212985,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 65171, 134524) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-5.181.226.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS35145i]
+5.181.226.0/24       unicast [twds_steam_v4 18:19:28.414] * (100) [AS35145i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 35145
+	BGP.as_path: 18041 137409 140227 140227 44324 35145
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -220966,16 +221004,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-209.248.9.0/24       unicast [twds_steam_v4 2026-09-01] * (100) [AS153771i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 9516 49304 153771
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (7578,99) (7578,899) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 899) (rt, 18041, 10000) (ro, 7578, 800)
-	BGP.large_community: (137409, 99, 97)
 197.164.4.0/22       unicast [twds_steam_v4 2026-09-16] * (100) [AS24863?]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -221213,7 +221241,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.93 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-146.222.99.0/24      unicast [twds_steam_v4 17:32:28.660] * (100) [AS9502i]
+146.222.99.0/24      unicast [twds_steam_v4 19:57:39.109] * (100) [AS9502i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -223453,6 +223481,15 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (7578, 1700, 2)
+197.162.212.0/22     unicast [twds_steam_v4 18:46:48.428] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 82.41.137.0/24       unicast [twds_steam_v4 2026-09-14] * (100) [AS208226i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -224856,7 +224893,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1321) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-102.218.68.0/23      unicast [twds_steam_v4 22:42:26.484] * (100) [AS37211i]
+102.218.68.0/23      unicast [twds_steam_v4 2026-09-18] * (100) [AS37211i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -225108,7 +225145,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-94.185.186.0/23      unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+94.185.186.0/23      unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -225838,6 +225875,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+104.23.186.0/24      unicast [twds_steam_v4 18:10:18.694] * (100) [AS13335i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 13335
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (13335,10017) (13335,11012) (13335,19000) (13335,19010) (13335,20510) (13335,20520) (13335,40000) (13335,40100) (18041,1000) (18041,2003) (18041,10000)
+	BGP.ext_community: (rt, 18041, 10000)
 38.199.59.0/24       unicast [twds_steam_v4 2026-09-04] * (100) [AS204170i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -228127,7 +228173,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-139.71.102.0/24      unicast [twds_steam_v4 23:23:05.716] * (100) [AS6307i]
+139.71.102.0/24      unicast [twds_steam_v4 2026-09-18] * (100) [AS6307i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -230304,7 +230350,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,699) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 699) (rt, 18041, 10000) (ro, 7578, 600) (generic, 0x30b0000, 0x2f9d)
 	BGP.large_community: (7578, 600, 7)
-114.198.147.0/24     unicast [twds_steam_v4 17:29:04.929] * (100) [AS17895i]
+114.198.147.0/24     unicast [twds_steam_v4 18:27:55.219] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -231968,7 +232014,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-193.150.144.0/21     unicast [twds_steam_v4 2026-09-11] * (100) [AS50833i]
+193.150.144.0/21     unicast [twds_steam_v4 18:16:18.718] * (100) [AS50833i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -233464,16 +233510,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-209.248.10.0/24      unicast [twds_steam_v4 2026-09-01] * (100) [AS153771i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 9516 49304 153771
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (7578,99) (7578,899) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 899) (rt, 18041, 10000) (ro, 7578, 800)
-	BGP.large_community: (137409, 99, 97)
 207.248.101.0/24     unicast [twds_steam_v4 2026-09-11] * (100) [AS263247i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -234372,15 +234408,6 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-173.82.204.0/24      unicast [twds_steam_v4 17:33:32.943] * (100) [AS16509i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 16509
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
 35.227.176.0/20      unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -235240,7 +235267,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-203.20.42.0/24       unicast [twds_steam_v4 2026-09-10] * (100) [AS154180i]
+203.20.42.0/24       unicast [twds_steam_v4 18:28:49.571] * (100) [AS154180i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -237780,11 +237807,11 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-44.32.143.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS215786i]
+44.32.143.0/24       unicast [twds_steam_v4 18:19:28.616] * (100) [AS215786i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 215786
+	BGP.as_path: 18041 137409 140227 140227 44324 215786
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -237992,7 +238019,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-202.124.150.0/24     unicast [twds_steam_v4 17:28:46.127] * (100) [AS17895i]
+202.124.150.0/24     unicast [twds_steam_v4 18:27:55.219] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -241430,7 +241457,7 @@ Table master4:
 	BGP.community: (7578,91) (7578,99) (7578,1199) (18041,1000) (18041,2003) (18041,10000) (65500,10000) (65500,10100)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1199) (rt, 18041, 10000) (ro, 7578, 1100)
 	BGP.large_community: (7578, 1100, 1)
-50.22.208.0/21       unicast [twds_steam_v4 00:03:46.102] * (100) [AS36351i]
+50.22.208.0/21       unicast [twds_steam_v4 2026-09-19] * (100) [AS36351i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -242869,7 +242896,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.148.0/24     unicast [twds_steam_v4 17:29:05.130] * (100) [AS17895i]
+114.198.148.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -243645,15 +243672,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.16.78.0/24       unicast [twds_steam_v4 2026-08-07] * (100) [AS131772i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 131772
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 115.249.32.0/22      unicast [twds_steam_v4 2026-08-28] * (100) [AS18101i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -244184,11 +244202,11 @@ Table master4:
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
 	BGP.large_community: (215248, 101, 500)
-44.30.152.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS151673i]
+44.30.152.0/24       unicast [twds_steam_v4 18:19:28.616] * (100) [AS151673i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 151673
+	BGP.as_path: 18041 137409 140227 140227 44324 151673
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -245907,16 +245925,6 @@ Table master4:
 	BGP.community: (174,990) (174,991) (3258,10000) (6461,5000) (7578,99) (7578,899) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 899) (rt, 18041, 10000) (ro, 7578, 800)
 	BGP.large_community: (7578, 800, 7)
-209.248.11.0/24      unicast [twds_steam_v4 2026-09-01] * (100) [AS153771i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 9516 49304 153771
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (7578,99) (7578,899) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 899) (rt, 18041, 10000) (ro, 7578, 800)
-	BGP.large_community: (137409, 99, 97)
 34.3.0.0/24          unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -245935,13 +245943,14 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1321) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-104.134.237.0/24     unicast [twds_steam_v4 17:50:23.162] * (100) [AS36411i]
+104.134.237.0/24     unicast [twds_steam_v4 18:47:45.381] * (100) [AS36411i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 15169 36411
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
+	BGP.atomic_aggr: 
 	BGP.aggregator: 104.135.30.47 AS4200010155
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
@@ -251753,7 +251762,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.118.183.0/24     unicast [twds_steam_v4 2026-09-13] * (100) [AS151734i]
+103.118.183.0/24     unicast [twds_steam_v4 19:28:42.670] * (100) [AS151734i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -251761,7 +251770,7 @@ Table master4:
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.atomic_aggr: 
-	BGP.aggregator: 0.160.0.90 AS13335
+	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 126.52.155.0/24      unicast [twds_steam_v4 2026-09-16] * (100) [AS135607i]
@@ -252250,16 +252259,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,604) (15412,615) (15412,621) (15412,705) (15412,1432) (18041,1000) (18041,2003) (18041,10000) (18101,106) (18101,1344) (18101,50231) (18101,50235) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-104.224.152.0/21     unicast [twds_steam_v4 12:49:10.160] * (100) [AS25820i]
+104.224.152.0/21     unicast [twds_steam_v4 20:03:58.203] * (100) [AS25820i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 906 25820 25820 25820 25820 25820 25820 25820
+	BGP.as_path: 18041 137409 25820 25820
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,58453) (906,100) (906,3000) (906,40000) (906,40100) (906,40101) (7578,99) (7578,999) (17152,1) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
-	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
+	BGP.community: (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (25820,8198) (25820,8199) (25820,46601) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900)
+	BGP.large_community: (7578, 900, 3)
 112.6.148.0/24       unicast [twds_steam_v4 2026-06-18] * (100) [AS24444i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -254201,6 +254210,15 @@ Table master4:
 	BGP.community: (7578,99) (7578,3399) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 3399) (rt, 18041, 10000) (ro, 7578, 3300)
 	BGP.large_community: (7578, 3300, 3)
+45.247.136.0/22      unicast [twds_steam_v4 20:12:24.951] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (15412,25202) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 203.92.208.0/24      unicast [twds_steam_v4 2026-09-16] * (100) [AS2687i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -255311,7 +255329,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.149.0/24     unicast [twds_steam_v4 17:29:04.501] * (100) [AS17895i]
+114.198.149.0/24     unicast [twds_steam_v4 18:27:45.569] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -256457,7 +256475,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 65171, 63631) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-112.53.100.0/24      unicast [twds_steam_v4 2026-07-21] * (100) [AS24445i]
+112.53.100.0/24      unicast [twds_steam_v4 18:28:29.575] * (100) [AS24445i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -256506,7 +256524,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-163.171.65.0/24      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+163.171.65.0/24      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -261478,6 +261496,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+64.71.152.0/24       unicast [twds_steam_v4 19:45:26.634] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 162.158.208.0/24     unicast [twds_steam_v4 2026-09-15] * (100) [AS13335i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -261589,7 +261617,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-36.141.122.0/24      unicast [twds_steam_v4 12:26:34.726] * (100) [AS56040i]
+36.141.122.0/24      unicast [twds_steam_v4 19:18:31.835] * (100) [AS56040i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -261802,7 +261830,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-17.91.232.0/21       unicast [twds_steam_v4 00:02:56.354] * (100) [AS714i]
+17.91.232.0/21       unicast [twds_steam_v4 2026-09-19] * (100) [AS714i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -262137,11 +262165,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12103) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-44.32.103.0/24       unicast [twds_steam_v4 17:26:13.113] * (100) [AS138435i]
+44.32.103.0/24       unicast [twds_steam_v4 18:19:28.414] * (100) [AS138435i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 138435
+	BGP.as_path: 18041 137409 140227 140227 44324 138435
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -262300,15 +262328,6 @@ Table master4:
 	BGP.atomic_aggr: 
 	BGP.aggregator: 0.160.0.93 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
-35.71.196.0/24       unicast [twds_steam_v4 17:37:14.460] * (100) [AS16509i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 16509
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 23.193.23.0/24       unicast [twds_steam_v4 2026-06-24] * (100) [AS21342i]
 	via 103.147.22.254 on eth0
@@ -263137,15 +263156,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-118.82.15.0/24       unicast [twds_steam_v4 2026-07-07] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 210.51.39.0/24       unicast [twds_steam_v4 2026-06-18] * (100) [AS9929?]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -267414,7 +267424,7 @@ Table master4:
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,20) (8529,30) (8529,975) (8529,9795) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 3299) (rt, 18041, 10000) (ro, 7578, 3200) (generic, 0x30b0000, 0x2151) (generic, 0x30b0000, 0x2328)
 	BGP.large_community: (0, 3, 0) (105, 3356, 1) (137409, 0, 1) (137409, 0, 2)
-202.124.144.0/24     unicast [twds_steam_v4 17:28:46.331] * (100) [AS17895i]
+202.124.144.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -267501,7 +267511,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-105.203.211.0/24     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+105.203.211.0/24     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -271754,15 +271764,6 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.136.167.0/24     unicast [twds_steam_v4 2026-09-18] * (100) [AS138689i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 15412 9304 138689 138689 138689 138689 138689 138689 138689 138689 138689 138689 138689
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
-	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 27.0.241.0/24        unicast [twds_steam_v4 2026-07-18] * (100) [AS131413i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -272317,16 +272318,15 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.142.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.142.0/24     unicast [twds_steam_v4 18:25:43.533] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 18233 17895 17895 17895 17895
+	BGP.as_path: 18041 15412 135607 135607 135607 135607 135607 17895
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
+	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14203) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 89.106.25.0/24       unicast [twds_steam_v4 2026-09-11] * (100) [AS136744i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -272913,7 +272913,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,2199) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 2199) (rt, 18041, 10000) (ro, 7578, 2100)
 	BGP.large_community: (7578, 2100, 7)
-23.48.92.0/23        unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.48.92.0/23        unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -273710,11 +273710,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-44.30.146.0/24       unicast [twds_steam_v4 17:26:13.313] * (100) [AS60900i]
+44.30.146.0/24       unicast [twds_steam_v4 18:19:28.616] * (100) [AS60900i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 60900
+	BGP.as_path: 18041 137409 140227 140227 44324 60900
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -273869,7 +273869,7 @@ Table master4:
 	BGP.aggregator: 10.8.0.8 AS4206325000
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-36.141.123.0/24      unicast [twds_steam_v4 12:26:34.726] * (100) [AS56040?]
+36.141.123.0/24      unicast [twds_steam_v4 19:18:45.459] * (100) [AS56040?]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: Incomplete
@@ -280434,7 +280434,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-144.36.2.0/24        unicast [twds_steam_v4 2026-08-31] * (100) [AS21433i]
+144.36.2.0/24        unicast [twds_steam_v4 19:43:10.195] * (100) [AS21433i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -282348,7 +282348,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-156.183.128.0/18     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.183.128.0/18     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -284796,7 +284796,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.143.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.143.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -287498,7 +287498,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-197.195.192.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+197.195.192.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -296276,7 +296276,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,299) (18041,1000) (18041,2003) (18041,10000) (65500,299) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 299) (rt, 18041, 10000) (ro, 7578, 200)
 	BGP.large_community: (7578, 200, 9)
-194.153.102.0/24     unicast [twds_steam_v4 09:30:51.408] * (100) [AS207928i]
+194.153.102.0/24     unicast [twds_steam_v4 19:39:09.635] * (100) [AS207928i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -296793,7 +296793,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.144.0/24     unicast [twds_steam_v4 17:29:05.433] * (100) [AS17895i]
+114.198.144.0/24     unicast [twds_steam_v4 18:27:45.569] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -298849,6 +298849,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1341) (15412,17102) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+41.130.132.0/22      unicast [twds_steam_v4 18:46:41.587] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 64.64.104.0/22       unicast [twds_steam_v4 2026-08-22] * (100) [AS137409i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -299222,7 +299231,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-23.8.192.0/20        unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.8.192.0/20        unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -299296,16 +299305,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-209.248.8.0/22       unicast [twds_steam_v4 2026-09-01] * (100) [AS153771i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 9516 49304 153771
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (7578,99) (7578,899) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 899) (rt, 18041, 10000) (ro, 7578, 800)
-	BGP.large_community: (137409, 99, 97)
 103.3.80.0/22        unicast [twds_steam_v4 2026-09-17] * (100) [AS56262i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -299381,6 +299380,17 @@ Table master4:
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
+	BGP.ext_community: (rt, 18041, 10000)
+5.83.172.0/23        unicast [twds_steam_v4 18:37:08.995] * (100) [AS199610i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 13335 199610
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.atomic_aggr: 
+	BGP.aggregator: 0.160.0.111 AS13335
+	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
 104.17.144.0/20      unicast [twds_steam_v4 2026-09-09] * (100) [AS13335i]
 	via 103.147.22.254 on eth0
@@ -299616,11 +299626,11 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-44.30.81.0/24        unicast [twds_steam_v4 17:26:13.313] * (100) [AS211729i]
+44.30.81.0/24        unicast [twds_steam_v4 19:13:44.335] * (100) [AS211729i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 211729
+	BGP.as_path: 18041 137409 140227 140227 44324 211729
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -299672,7 +299682,7 @@ Table master4:
 	BGP.community: (931,19000) (931,19010) (931,19011) (7578,99) (7578,1599) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1555) (rt, 7578, 1599) (rt, 18041, 10000) (ro, 7578, 1500)
 	BGP.large_community: (7578, 1500, 5)
-156.170.0.0/18       unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.170.0.0/18       unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -301407,17 +301417,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-128.0.114.0/23       unicast [twds_steam_v4 2026-09-18] * (100) [AS199610i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 13335 199610
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.atomic_aggr: 
-	BGP.aggregator: 0.160.0.111 AS13335
-	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
-	BGP.ext_community: (rt, 18041, 10000)
 27.254.5.0/24        unicast [twds_steam_v4 2026-08-30] * (100) [AS4750i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -303108,6 +303107,15 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+45.247.140.0/22      unicast [twds_steam_v4 20:12:24.951] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (15412,25202) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 203.150.128.0/21     unicast [twds_steam_v4 2026-06-18] * (100) [AS4618i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -304563,15 +304571,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.6.117.0/24       unicast [twds_steam_v4 2026-09-02] * (100) [AS132164i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146 132164 132164 132164 132164 132164
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 210.15.64.0/18       unicast [twds_steam_v4 2026-08-28] * (100) [AS9929i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -305607,7 +305606,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,604) (15412,615) (15412,621) (15412,705) (15412,1432) (18041,1000) (18041,2003) (18041,10000) (18101,1344) (18101,50141) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.172.24.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.172.24.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -306288,7 +306287,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,699) (8529,20) (8529,9541) (8529,10520) (18041,1000) (18041,2003) (18041,10000) (65500,699) (65500,10000) (65500,10100)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 699) (rt, 18041, 10000) (ro, 7578, 600)
 	BGP.large_community: (7578, 0, 15412) (7578, 600, 2) (137409, 0, 1) (137409, 0, 2) (137409, 0, 4)
-197.195.160.0/19     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+197.195.160.0/19     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -308675,16 +308674,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-114.198.145.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 18233 17895 17895 17895 17895
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
 162.23.32.0/19       unicast [twds_steam_v4 2026-09-11] * (100) [AS33845i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -309252,7 +309241,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855) (rt, 40001, 65535) (generic, 0x30c0000, 0x8) (generic, 0x603fc59, 0xc0bf4441)
-163.223.176.0/24     unicast [twds_steam_v4 2026-08-16] * (100) [AS136181i]
+163.223.176.0/24     unicast [twds_steam_v4 19:57:13.095] * (100) [AS136181i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -309447,7 +309436,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-18.68.63.0/24        unicast [twds_steam_v4 22:34:25.010] * (100) [AS16509i]
+18.68.63.0/24        unicast [twds_steam_v4 2026-09-18] * (100) [AS16509i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -309621,7 +309610,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-141.109.83.0/24      unicast [twds_steam_v4 00:03:39.204] * (100) [AS14593i]
+141.109.83.0/24      unicast [twds_steam_v4 20:00:29.994] * (100) [AS14593i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -310823,7 +310812,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.167.64.0/18      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.167.64.0/18      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -316762,7 +316751,7 @@ Table master4:
 	BGP.community: (7578,99) (7578,1599) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1599) (rt, 18041, 10000) (ro, 7578, 1500)
 	BGP.large_community: (7578, 1500, 4)
-138.252.226.0/24     unicast [twds_steam_v4 2026-09-07] * (100) [AS133922i]
+138.252.226.0/24     unicast [twds_steam_v4 18:48:20.935] * (100) [AS133922i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -320055,7 +320044,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.177.176.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.177.176.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -320131,16 +320120,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-165.101.58.0/24      unicast [twds_steam_v4 2026-09-07] * (100) [AS153789i]
+165.101.58.0/24      unicast [twds_steam_v4 18:50:27.004] * (100) [AS153789i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 153789 153789 153789 153789 153789 153789 153789
+	BGP.as_path: 18041 15412 135607 135607 135607 135607 135607 153789 153789 153789 153789 153789 153789 153789 153789
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
+	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14203) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 112.18.153.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS9808i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -320950,7 +320938,7 @@ Table master4:
 	BGP.community: (7578,99) (18041,1000) (18041,2003) (18041,10000) (65500,1099) (65500,10000) (65500,10100)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1099) (rt, 18041, 10000) (ro, 7578, 1000)
 	BGP.large_community: (7578, 1000, 4) (137409, 0, 2)
-202.124.140.0/24     unicast [twds_steam_v4 17:28:46.331] * (100) [AS17895i]
+202.124.140.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -321014,7 +321002,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-105.202.24.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+105.202.24.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -321818,7 +321806,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-41.78.108.0/24       unicast [twds_steam_v4 22:42:26.484] * (100) [AS37211i]
+41.78.108.0/24       unicast [twds_steam_v4 2026-09-18] * (100) [AS37211i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -322670,6 +322658,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (7578,99) (7578,399) (18041,1000) (18041,2003) (18041,10000) (24479,99) (65500,399) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 399) (rt, 18041, 10000) (ro, 7578, 300)
+45.247.64.0/22       unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 155.60.234.0/24      unicast [twds_steam_v4 2026-09-17] * (100) [AS8075i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -325858,7 +325855,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-114.198.138.0/24     unicast [twds_steam_v4 17:29:05.130] * (100) [AS17895i]
+114.198.138.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -328428,7 +328425,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (4775,106) (4775,116) (4775,123) (4775,126) (4775,142) (4775,148) (4775,161) (4775,162) (4775,165) (4775,500) (4775,536) (4775,5774) (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14102) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.178.56.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.178.56.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -329008,7 +329005,7 @@ Table master4:
 	BGP.aggregator: 196.29.178.170 AS33788
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-138.252.227.0/24     unicast [twds_steam_v4 2026-09-07] * (100) [AS133922i]
+138.252.227.0/24     unicast [twds_steam_v4 18:48:19.792] * (100) [AS133922i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -331794,6 +331791,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
+197.162.204.0/22     unicast [twds_steam_v4 18:46:48.428] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 124.108.166.0/24     unicast [twds_steam_v4 2026-09-08] * (100) [AS131634i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -333388,7 +333394,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-105.203.208.0/24     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+105.203.208.0/24     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -333728,7 +333734,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-43.255.123.0/24      unicast [twds_steam_v4 2026-09-17] * (100) [AS42960i]
+43.255.123.0/24      unicast [twds_steam_v4 18:27:37.607] * (100) [AS42960i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -337401,15 +337407,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.136.164.0/24     unicast [twds_steam_v4 2026-09-18] * (100) [AS138689i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 15412 9304 138689 138689
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
-	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 202.128.52.0/22      unicast [twds_steam_v4 2026-09-18] * (100) [AS23944i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -338034,7 +338031,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-114.198.139.0/24     unicast [twds_steam_v4 17:29:04.501] * (100) [AS17895i]
+114.198.139.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -344255,7 +344252,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-103.151.252.0/24     unicast [twds_steam_v4 00:16:05.332] * (100) [AS140699i]
+103.151.252.0/24     unicast [twds_steam_v4 2026-09-19] * (100) [AS140699i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -345050,7 +345047,7 @@ Table master4:
 	BGP.aggregator: 10.8.160.0 AS4206655000
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-184.29.100.0/22      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+184.29.100.0/22      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -345204,7 +345201,7 @@ Table master4:
 	BGP.aggregator: 172.16.21.168 AS24863
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-202.124.142.0/24     unicast [twds_steam_v4 17:28:46.331] * (100) [AS17895i]
+202.124.142.0/24     unicast [twds_steam_v4 18:27:55.219] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -345559,7 +345556,7 @@ Table master4:
 	BGP.aggregator: 162.158.240.1 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-63.23.64.0/24        unicast [twds_steam_v4 22:58:35.132] * (100) [AS6984i]
+63.23.64.0/24        unicast [twds_steam_v4 2026-09-18] * (100) [AS6984i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -347492,7 +347489,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-23.210.196.0/22      unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.210.196.0/22      unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -347984,6 +347981,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
+37.231.124.0/23      unicast [twds_steam_v4 18:50:58.669] * (100) [AS47589i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 15412 47589
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,604) (15412,622) (15412,703) (15412,1414) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 202.183.172.0/22     unicast [twds_steam_v4 2026-06-18] * (100) [AS4750i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -348410,7 +348416,7 @@ Table master4:
 	BGP.community: (0,49544) (7578,99) (7578,1300) (7578,1399) (18041,1000) (18041,2003) (18041,10000) (65500,1399) (65500,10000) (65500,10100)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1399) (rt, 18041, 10000) (ro, 7578, 1300)
 	BGP.large_community: (7578, 1300, 1)
-50.22.200.0/21       unicast [twds_steam_v4 00:03:46.102] * (100) [AS36351i]
+50.22.200.0/21       unicast [twds_steam_v4 2026-09-19] * (100) [AS36351i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -349239,15 +349245,6 @@ Table master4:
 	BGP.aggregator: 172.17.1.6 AS5416
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-103.136.165.0/24     unicast [twds_steam_v4 2026-09-18] * (100) [AS138689i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 15412 9304 138689 138689 138689 138689 138689 138689 138689 138689 138689 138689 138689
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
-	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 185.34.84.0/22       unicast [twds_steam_v4 2026-07-23] * (100) [AS8075i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -349578,7 +349575,7 @@ Table master4:
 	BGP.community: (0,58453) (906,120) (906,3000) (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
 	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
-23.41.224.0/20       unicast [twds_steam_v4 17:06:16.203] * (100) [AS4775i]
+23.41.224.0/20       unicast [twds_steam_v4 20:01:09.796] * (100) [AS4775i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -349781,6 +349778,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+45.240.140.0/22      unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 202.81.168.0/21      unicast [twds_steam_v4 2026-09-18] * (100) [AS17970i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -349928,16 +349934,15 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.140.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.140.0/24     unicast [twds_steam_v4 18:25:43.256] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 63927 18233 17895 17895 17895 17895
+	BGP.as_path: 18041 15412 135607 135607 135607 135607 135607 17895 17895 17895 17895
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
-	BGP.large_community: (7578, 1700, 2)
+	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (15412,14203) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 13.248.126.0/24      unicast [twds_steam_v4 2026-09-15] * (100) [AS16509i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -350349,6 +350354,15 @@ Table master4:
 	BGP.aggregator: 10.52.174.64 AS4200301014
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
+45.247.60.0/22       unicast [twds_steam_v4 18:40:57.705] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 34.119.64.0/20       unicast [twds_steam_v4 2026-06-18] * (100) [AS396982i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -352733,15 +352747,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-118.82.14.0/24       unicast [twds_steam_v4 2026-07-07] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 192.19.120.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS396982e]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -353964,7 +353969,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-94.185.142.0/23      unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+94.185.142.0/23      unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -357407,7 +357412,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,604) (15412,621) (15412,703) (15412,1417) (15412,43101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-45.145.165.0/24      unicast [twds_steam_v4 2026-09-18] * (100) [AS207992i]
+45.145.165.0/24      unicast [twds_steam_v4 19:50:26.373] * (100) [AS207992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -362017,7 +362022,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-114.198.141.0/24     unicast [twds_steam_v4 17:29:03.887] * (100) [AS17895i]
+114.198.141.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -362197,7 +362202,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-156.168.64.0/18      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.168.64.0/18      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -371956,15 +371961,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 65171, 55303) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-118.82.14.0/23       unicast [twds_steam_v4 2026-07-07] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 203.6.121.0/24       unicast [twds_steam_v4 2026-08-12] * (100) [AS9466i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -373362,7 +373358,7 @@ Table master4:
 	BGP.aggregator: 10.8.80.129 AS4206745000
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-109.174.134.0/23     unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+109.174.134.0/23     unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -373782,7 +373778,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-94.185.216.0/23      unicast [twds_steam_v4 16:42:02.680] * (100) [AS9009i]
+94.185.216.0/23      unicast [twds_steam_v4 18:01:57.477] * (100) [AS9009i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -373848,16 +373844,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,4160) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-95.181.188.0/22      unicast [twds_steam_v4 12:49:10.160] * (100) [AS25820i]
+95.181.188.0/22      unicast [twds_steam_v4 20:03:58.408] * (100) [AS25820i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 906 25820 25820 25820 25820 25820 25820 25820
+	BGP.as_path: 18041 137409 25820 25820
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,58453) (906,100) (906,3000) (906,40000) (906,40100) (906,40101) (7578,99) (7578,999) (17152,1) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
-	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
+	BGP.community: (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (25820,8198) (25820,8199) (25820,46601) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900)
+	BGP.large_community: (7578, 900, 3)
 45.223.62.0/24       unicast [twds_steam_v4 2026-07-20] * (100) [AS19551i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -375364,15 +375360,6 @@ Table master4:
 	BGP.aggregator: 172.17.1.6 AS5416
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-103.136.164.0/22     unicast [twds_steam_v4 2026-09-18] * (100) [AS138689i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 15412 9304 138689 138689
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
-	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 198.89.47.0/24       unicast [twds_steam_v4 2026-09-16] * (100) [AS40824i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -376100,14 +376087,14 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (65024,801) (65024,1004)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-84.205.76.0/24       unicast [twds_steam_v4 16:00:17.636] * (100) [AS12654i]
+84.205.76.0/24       unicast [twds_steam_v4 20:00:14.129] * (100) [AS12654i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
 	BGP.as_path: 18041 137409 62000 34019 12654
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.aggregator: 10.24.156.0 AS64535
+	BGP.aggregator: 10.24.212.64 AS64536
 	BGP.community: (7578,99) (7578,2499) (18041,1000) (18041,2003) (18041,10000) (34019,12654) (34019,64512) (62000,1002) (65500,10000) (65512,20008)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 2499) (rt, 18041, 10000) (ro, 7578, 2400)
 	BGP.large_community: (7578, 2400, 1)
@@ -377067,6 +377054,16 @@ Table master4:
 	BGP.community: (7578,99) (7578,699) (18041,1000) (18041,2003) (18041,10000) (65500,660) (65500,699) (65500,3249) (65500,10100)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 699) (rt, 18041, 10000) (ro, 7578, 600)
 	BGP.large_community: (7578, 600, 1)
+74.214.174.0/24      unicast [twds_steam_v4 19:38:21.365] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 58.136.164.0/22      unicast [twds_steam_v4 2026-09-02] * (100) [AS133481i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -379073,7 +379070,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-114.198.134.0/24     unicast [twds_steam_v4 17:29:05.433] * (100) [AS17895i]
+114.198.134.0/24     unicast [twds_steam_v4 18:27:44.865] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -379998,6 +379995,15 @@ Table master4:
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (15412,604) (15412,621) (15412,703) (15412,1417) (15412,43101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+197.162.208.0/22     unicast [twds_steam_v4 18:46:48.428] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 50.22.40.0/21        unicast [twds_steam_v4 2026-09-08] * (100) [AS36351i]
 	via 103.147.22.254 on eth0
@@ -382849,7 +382855,7 @@ Table master4:
 	BGP.aggregator: 185.25.245.254 AS42853
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-156.179.72.0/21      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.179.72.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -386158,7 +386164,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.95 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-202.124.137.0/24     unicast [twds_steam_v4 17:28:44.404] * (100) [AS17895i]
+202.124.137.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -387228,7 +387234,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-102.60.128.0/18      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+102.60.128.0/18      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -388495,7 +388501,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-102.63.0.0/18        unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+102.63.0.0/18        unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -389187,11 +389193,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-185.64.24.0/24       unicast [twds_steam_v4 15:34:43.058] * (100) [AS201684i]
+185.64.24.0/24       unicast [twds_steam_v4 18:37:39.446] * (100) [AS201684i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 8529 28885 201684 201684
+	BGP.as_path: 18041 137409 8529 28885 201684
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,30) (8529,40) (8529,700) (8529,707) (8529,1020) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
@@ -391318,11 +391324,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-188.220.65.0/24      unicast [twds_steam_v4 17:26:13.113] * (100) [AS211575i]
+188.220.65.0/24      unicast [twds_steam_v4 18:19:28.414] * (100) [AS211575i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 140227 44324 58453 44324 211575
+	BGP.as_path: 18041 137409 140227 140227 44324 211575
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
@@ -391346,7 +391352,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-114.198.135.0/24     unicast [twds_steam_v4 17:29:04.245] * (100) [AS17895i]
+114.198.135.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -394366,15 +394372,6 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-118.82.9.0/24        unicast [twds_steam_v4 2026-07-07] * (100) [AS38146i]
-	via 103.147.22.254 on eth0
-	Type: BGP univ
-	BGP.origin: IGP
-	BGP.as_path: 18041 24482 24538 24538 24538 24538 38146
-	BGP.next_hop: 103.147.22.254
-	BGP.local_pref: 100
-	BGP.community: (18041,1000) (18041,2003) (18041,10001)
-	BGP.ext_community: (rt, 18041, 10001)
 203.154.32.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS4618i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -397577,6 +397574,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (rt, 65171, 63631) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+65.49.60.0/24        unicast [twds_steam_v4 19:45:41.327] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 211.43.156.0/24      unicast [twds_steam_v4 2026-07-18] * (100) [AS54994i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -398527,7 +398534,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,12104) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-202.124.138.0/24     unicast [twds_steam_v4 17:28:46.331] * (100) [AS17895i]
+202.124.138.0/24     unicast [twds_steam_v4 18:27:49.178] * (100) [AS17895i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -401600,11 +401607,11 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-185.64.25.0/24       unicast [twds_steam_v4 15:34:43.058] * (100) [AS201684i]
+185.64.25.0/24       unicast [twds_steam_v4 18:37:39.446] * (100) [AS201684i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 8529 28885 201684 201684
+	BGP.as_path: 18041 137409 8529 28885 201684
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,30) (8529,40) (8529,700) (8529,707) (8529,1020) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
@@ -403745,15 +403752,16 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (15412,25202) (18041,1000) (18041,2003) (18041,10000) (36935,9995) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-103.183.247.0/24     unicast [twds_steam_v4 17:36:36.059] * (100) [AS45250i]
+103.183.247.0/24     unicast [twds_steam_v4 20:11:47.331] * (100) [AS45250i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 15412 9304 45250 45250 45250 45250 45250
+	BGP.as_path: 18041 137409 63927 140715 45250
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
-	BGP.ext_community: (rt, 18041, 10000) (rt, 65171, 45250) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 203.231.25.0/24      unicast [twds_steam_v4 2026-06-18] * (100) [AS23593i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -405216,7 +405224,7 @@ Table master4:
 	BGP.community: (0,16276) (7578,99) (7578,3299) (8529,20) (8529,700) (8529,807) (8529,977) (8529,17557) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 3299) (rt, 18041, 10000) (ro, 7578, 3200) (generic, 0x30b0000, 0x2151) (generic, 0x30b0000, 0x2328)
 	BGP.large_community: (0, 3, 0) (105, 3356, 1) (137409, 0, 1) (137409, 0, 2)
-160.250.6.0/23       unicast [twds_steam_v4 2026-09-09] * (100) [AS153455i]
+160.250.6.0/23       unicast [twds_steam_v4 18:10:17.202] * (100) [AS153455i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -405467,7 +405475,7 @@ Table master4:
 	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (0,58453) (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
 	BGP.large_community: (7578, 1700, 2) (24115, 0, 10099) (24115, 0, 58453) (137409, 0, 2) (137409, 0, 2310)
-156.165.64.0/19      unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.165.64.0/19      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -405629,7 +405637,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,621) (15412,703) (15412,1331) (18041,1000) (18041,2003) (18041,10000) (38855,18041) (65024,801) (65024,1004)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
-156.174.8.0/21       unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.174.8.0/21       unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -406705,6 +406713,16 @@ Table master4:
 	BGP.aggregator: 0.160.0.93 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
+65.19.188.0/24       unicast [twds_steam_v4 19:38:26.774] * (100) [AS401742i]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: IGP
+	BGP.as_path: 18041 137409 401742 401742 401742 401742
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (0,6939) (0,9678) (0,17408) (0,20940) (18041,1000) (18041,2003) (18041,10001)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 1799) (rt, 18041, 10001) (ro, 7578, 1700)
+	BGP.large_community: (7578, 1700, 2)
 162.159.115.0/24     unicast [twds_steam_v4 2026-08-28] * (100) [AS13335i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -409032,7 +409050,7 @@ Table master4:
 	BGP.aggregator: 10.52.165.66 AS4200302019
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-156.177.112.0/21     unicast [twds_steam_v4 06:56:52.726] * (100) [AS36992i]
+156.177.112.0/21     unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -409641,6 +409659,15 @@ Table master4:
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
 	BGP.community: (15412,603) (15412,622) (15412,703) (15412,1311) (15412,10101) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
+	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
+45.247.132.0/22      unicast [twds_steam_v4 20:12:24.951] * (100) [AS24863?]
+	via 103.147.22.254 on eth0
+	Type: BGP univ
+	BGP.origin: Incomplete
+	BGP.as_path: 18041 15412 8452 24863
+	BGP.next_hop: 103.147.22.254
+	BGP.local_pref: 100
+	BGP.community: (15412,602) (15412,621) (15412,703) (15412,1551) (15412,25202) (18041,1000) (18041,2003) (18041,10000) (38855,18041)
 	BGP.ext_community: (rt, 18041, 10000) (unknown 0x4, 18041, 1133903872) (generic, 0x97c70100, 0x4679)
 119.59.12.0/24       unicast [twds_steam_v4 2026-09-10] * (100) [AS139648i]
 	via 103.147.22.254 on eth0
@@ -410574,16 +410601,16 @@ Table master4:
 	BGP.aggregator: 10.8.160.0 AS4206655000
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001) (rt, 18041, 38855)
-150.242.91.0/24      unicast [twds_steam_v4 12:49:10.160] * (100) [AS25820i]
+150.242.91.0/24      unicast [twds_steam_v4 20:03:59.341] * (100) [AS25820i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
-	BGP.as_path: 18041 137409 906 25820 25820 25820 25820 25820 25820 25820
+	BGP.as_path: 18041 137409 25820 25820
 	BGP.next_hop: 103.147.22.254
 	BGP.local_pref: 100
-	BGP.community: (0,58453) (906,100) (906,3000) (906,40000) (906,40100) (906,40101) (7578,99) (7578,999) (17152,1) (18041,1000) (18041,2003) (18041,10000) (65500,10000)
-	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900) (generic, 0x30b0000, 0x38a)
-	BGP.large_community: (7578, 900, 3) (137409, 0, 910)
+	BGP.community: (7578,99) (7578,999) (18041,1000) (18041,2003) (18041,10000) (25820,8198) (25820,8199) (25820,46601) (65500,10000)
+	BGP.ext_community: (rt, 7578, 10) (rt, 7578, 55) (rt, 7578, 99) (rt, 7578, 999) (rt, 18041, 10000) (ro, 7578, 900)
+	BGP.large_community: (7578, 900, 3)
 185.248.185.0/24     unicast [twds_steam_v4 2026-06-30] * (100) [AS38136?]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
@@ -412379,7 +412406,7 @@ Table master4:
 	BGP.local_pref: 100
 	BGP.community: (18041,1000) (18041,2003) (18041,10001)
 	BGP.ext_community: (rt, 18041, 10001)
-156.172.16.0/21      unicast [twds_steam_v4 09:00:01.550] * (100) [AS36992i]
+156.172.16.0/21      unicast [twds_steam_v4 20:00:43.413] * (100) [AS36992i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
@@ -412700,7 +412727,7 @@ Table master4:
 	BGP.aggregator: 0.160.0.99 AS13335
 	BGP.community: (13335,10080) (18041,1000) (18041,2003) (18041,10000)
 	BGP.ext_community: (rt, 18041, 10000)
-173.82.227.0/24      unicast [twds_steam_v4 17:20:16.158] * (100) [AS16509i]
+173.82.227.0/24      unicast [twds_steam_v4 20:06:45.413] * (100) [AS16509i]
 	via 103.147.22.254 on eth0
 	Type: BGP univ
 	BGP.origin: IGP
